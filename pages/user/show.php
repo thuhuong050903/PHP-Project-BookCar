@@ -8,7 +8,7 @@
 <script src="https://kit.fontawesome.com/11a9c95312.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="/styles/user.css">
+<link rel="stylesheet" href="./styles/user.css">
 <title>Home Page</title>
 
 </head>
@@ -16,32 +16,8 @@
     <!-- Code header và section 1 -->
     <div class="header-section1">
         <!-- header -->
-        <header>
-            <div class="header-logo">
-                <img src="https://o.remove.bg/downloads/89bd9379-0143-4de8-8e72-69155c6ba036/logo-removebg-preview.png" alt="logo">
-            </div>
-            <div class="header-optional">
-                <a href="">HOME</a>
-            </div>
-            <div class="header-optional">
-                <a href="">ABOUT US</a>
-            </div>
-            <div class="header-optional">
-                <a href="">SERVICES</a>
-            </div>
-            <div class="header-optional">
-                <a href="">OUR FLEETS</a>
-            </div>
-            <div class="header-optional">
-                <a href="">BLOG</a>
-            </div>
-            <div class="header-optional">
-                <a href="">CONTACT US</a>
-            </div>
-            <div class="header-optional">
-                <a href="">LOGIN</a>
-            </div>
-        </header>
+        <?php 
+        include "./pages/components/header.php" ?>
         <!-- section1 -->
         <section id="section1">
             <div class="section1-content">
