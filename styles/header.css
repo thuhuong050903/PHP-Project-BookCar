@@ -1,0 +1,15 @@
+.header-logo img{
+    width: 130px;
+    height: 100px;
+}
+
+.header-optional a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+header  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
