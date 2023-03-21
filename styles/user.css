@@ -1,0 +1,48 @@
+/* CSS header và section 1*/
+
+.section1-content-left {
+    font-weight: bold;
+    color:white;
+    width:50%;
+    height: 300px;
+}
+#form-pickUp-location {
+    background-color: aliceblue;
+}
+#form-drop-location {
+    background-color: aliceblue;
+}
+.section1-form table{
+    margin: auto;
+    
+}
+.section1-form {
+    width: 100%;
+    padding-top: 30px;
+}
+.section1-content-right {
+    color: aliceblue;
+    font-weight: bold;
+    width:50%;
+    height: 300px;
+    background-color: rgba(4, 4, 4, 0.646);
+}
+.section1-content {
+    padding-top: 270px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 60%;
+   
+    }
+
+.header-section1{
+    width:100%;
+    height:900px;        
+    background-image: url(https://static.danhgiaxe.com/data/201525/8-peugeot-rcz-while-most-americans-may-be-unfamiliar-with-this-french-sports-coupe-the-rcz-has-been-racking-up-the-awards-since-its-debut-in-2009-including-top-gears-2010-coupe-of-the-year_2440.jpg);
+    background-size: 100% 739px;
+    background-repeat: no-repeat;
+
+}
+
+/* ----------------------------*/
