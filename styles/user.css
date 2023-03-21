@@ -46,3 +46,90 @@
 }
 
 /* ----------------------------*/
+
+
+/* SC6 */
+.sc6{
+	height: 610px;
+	background-color: #999;
+
+}
+.sc6 .wrap{
+
+    justify-content: center
+}
+.sc6 .container .text-title2{
+	color: white;
+    font-size: 18px;
+    font-weight: 300px;
+    line-height: 52px;
+    text-align:center ;
+	margin-top: -40px;
+}
+.sc6 .container .text-title1{
+	color: white;
+	font-family: "Oswald",sans-serif;
+    font-size: 38px;
+    letter-spacing: 1px;
+    padding-top:1rem;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+	/* margin-top: 100px; */
+}
+.sc6 .container .wrap .main-text{
+	height: 250px;
+	width: 216px;
+	border-radius: 5%;
+	background-color: #595959;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.triangle {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #595959;
+	margin-left: 40%;
+    margin-bottom: 40px;
+	display: block;
+	}
+
+.sc6 .container .wrap .icon{
+	color: #d4651f;
+	text-align: center;
+	padding-top: 2rem;
+	font-size: 20px;
+
+}
+.sc6 .container .wrap{
+	display: flex;
+	flex-direction: row;
+}
+.sc6 .container .review_details .main-text .name p{
+	text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #999;
+
+}
+.sc6 .container .avatar img{
+	align-items: center;
+	border-radius: 50%;
+}
+
+
+.sc6 .container .wrap p{
+	color: #fff;
+	font-family: "Oswald",sans-serif;
+	padding: 0.8rem;
+	border-radius: 160px;
+
+
+}
+
+
+/* ------------------- */
