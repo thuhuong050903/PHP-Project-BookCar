@@ -133,3 +133,64 @@
 
 
 /* ------------------- */
+
+/* CSS trang checkout */
+
+/* form nhập thông tin  */
+.form-information {
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    line-height: 50px;
+}
+.title {
+    font-weight: bold;
+}
+.required {
+    color:red;
+}
+.form-input {
+    width: 70%;
+    height: 40px;
+}
+.form-information-group {
+    margin-left: 20%;
+}
+.submit {
+    width:70px;
+    height:30px;
+    background-color: black;
+    color: aliceblue;
+}
+.cancel {
+    width:70px;
+    height:30px;
+    border:none;
+}
+
+/* form hiển thị thông tin chi tiết hoá đơn */
+.form-information-checkout {
+    width: 50%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    line-height: 30px;
+}
+.checkout-group {
+    margin-left: 20%;
+}
+
+.checkout-group .form-input{
+    width: 70%;
+    height: 20px;
+    
+    
+}
+
+.checkout {
+    width:70px;
+    height:30px;
+    background-color: black;
+    color: aliceblue;
+}
+
+/* ----------------------- */
