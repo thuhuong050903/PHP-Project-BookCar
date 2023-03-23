@@ -47,6 +47,62 @@
 
 /* ----------------------------*/
 
+/* CSS session 2 */
+.title {
+    background-color: gray;
+    text-align: center;
+    height:60px;
+
+}
+.titleh2{
+    padding-top:10px;
+}
+.productcar {
+    background-color: black;
+    height: 600px;
+    display: inline-block;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+}
+.productcar .product {
+    text-align: center;
+}
+.col-12{
+    background: white;
+}
+.col-3 {
+    height: 300px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.item{
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.btn {
+    color: white;
+    background-color:#866438;
+}
+.product {
+    padding-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.productcar {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-left: 300px;
+}
+.card-img-top {
+    padding-top:10px;
+    width: 200px;
+    height: 150px;
+}
 
 /* SC6 */
 .sc6{
