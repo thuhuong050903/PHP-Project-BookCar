@@ -8,31 +8,24 @@
     <title>Header</title>
 </head>
 <body>
-<header>
-    <div class="header-logo">
-        <img src="https://o.remove.bg/downloads/89bd9379-0143-4de8-8e72-69155c6ba036/logo-removebg-preview.png" alt="logo">
-    </div>
-    <div class="header-optional">
-        <a href="">HOME</a>
-    </div>
-    <div class="header-optional">
-        <a href="">ABOUT US</a>
-    </div>
-    <div class="header-optional">
-        <a href="">SERVICES</a>
-    </div>
-    <div class="header-optional">
-        <a href="">OUR FLEETS</a>
-    </div>
-    <div class="header-optional">
-        <a href="">BLOG</a>
-    </div>
-    <div class="header-optional">
-        <a href="">CONTACT US</a>
-    </div>
-    <div class="header-optional">
-        <a href="">LOGIN</a>
-    </div>
-</header>
+<div class="header">
+            <div class="logo" style="Width:100px;height:100px " >
+                <img class="img1" src="/PHP-Project-BookCar/images/logo2.png" alt="" style="object-fit:cover;object-position: center;Width:100px;height:100px;margin-top:10px">
+            </div>
+            <div class="menu">
+                <ul class="listmenu" >
+                    <li><a href="#">HOME PAGE</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">OUR FLEETS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="button">
+                <button class="bt1"><a href="#">LOGIN</a>
+                </button>           
+            </div>
+        </div>
 </body>
 </html>
