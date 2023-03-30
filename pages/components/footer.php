@@ -25,7 +25,7 @@
                                 <i class="far fa-envelope-open"></i>
                                 <div class="cta-text">
                                     <h4>Mail us</h4>
-                                    <span>bien.nguyen24@student.passerellesnumeriques.org</span>
+                                    <span>super@contact.com</span>
                                 </div>
                             </div>
                         </div>
