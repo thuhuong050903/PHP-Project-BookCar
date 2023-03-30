@@ -22,7 +22,7 @@
         <a href="">SERVICES</a>
     </div>
     <div class="header-optional">
-        <a href="">OUR FLEETS</a>
+        <a href="./pages/user/car_fleet.php">OUR FLEETS</a>
     </div>
     <div class="header-optional">
         <a href="">BLOG</a>
