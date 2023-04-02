@@ -11,13 +11,50 @@
 <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/user.css">
 <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/header.css">
 <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/footer.css">
+<link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/icon.css">
+<link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/blog.css">
+
 <title>Home Page</title>
+
 </head>
 <body>
-        <!-- header -->
-        <?php 
-        include "./pages/components/header.php" ?>
-        <!-- section1 -->
+    
+        <div class="icon-container">
+                <!-- Tạo icon cho chatbox -->
+            <a href="#" class="chat-icon"><i class="fa fa-comment"></i></a>
+
+        <!-- Tạo icon cho số điện thoại -->
+            <a href="tel:0123456789" class="phone-icon"><i class="fa fa-phone"></i></a>
+
+        <!-- Tạo icon cho Facebook -->
+            <a href="https://www.facebook.com/myfanpage/" class="facebook-icon" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+
+                <!-- header -->
+                <?php 
+                include './pages/components/header.php' ?>
+                <!-- section1 -->
+        <!-- <div class="slideshow-container" style="z-index: 1;">
+            <div class="mySlides">
+              <img src="./images/a1.jpg" style="width:100%;height:105vh; object-fit:cover;object-position: center;">          
+            </div>
+            
+            <div class="mySlides">
+
+              <img src="./images/a2.png" style="width:100%;height:105vh; object-fit: cover;object-position: center;">
+              
+            </div>
+          
+            <div class="mySlides">
+              <img src="./images/a3.jpg" style="width:100%;height:105vh; object-fit: cover;object-position: center;">
+            </div>
+            </div>
+            <br>      
+            <div style="text-align:center; ">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div> -->
         <section class="section1">
             <div class="section1-content">
                 <div class="section1-content-left">
@@ -27,6 +64,7 @@
                     <h3 style="width: 250px;text-align: center;margin: auto;"><i> Now you can go anywhere with our car booking service.</i></h3>
                 </div>
                 <!-- form section 1 -->
+              
                 <div class="section1-content-right">
                     <form class="section1-form">
                         <table>
@@ -99,7 +137,7 @@
             </div>
     </section>
 <!-- code session 2 -->
-<div class="latest-blog" >
+<div class="latest-blog" style="position: relative;" >
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -264,6 +302,8 @@
         </div>
     </div>
 </section>
+<!-- blog -->
+
  
 <?php 
         include "./pages/components/footer.php" ?>
@@ -271,4 +311,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
+<!-- <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 1500); 
+        }
+        </script> -->
 </html>

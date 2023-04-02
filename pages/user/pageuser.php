@@ -15,7 +15,7 @@
     
    
     <?php 
-    include "./pages/user/show.php";
+    include "./show.php";
     ?>
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
