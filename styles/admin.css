@@ -5,6 +5,8 @@
        padding: 0;
        box-sizing: border-box;
        font-family: 'Poppins', sans-serif;
+   
+
    }
    
    :root{
@@ -113,6 +115,8 @@
    }
    .menu-items li{
        list-style: none;
+    text-decoration: none;
+
    }
    .menu-items li a{
        display: flex;
@@ -120,6 +124,7 @@
        height: 50px;
        text-decoration: none;
        position: relative;
+       
    }
    .nav-links li a:hover:before{
        position: absolute;

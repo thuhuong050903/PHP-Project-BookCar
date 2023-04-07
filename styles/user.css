@@ -28,85 +28,131 @@
     background-color: rgba(4, 4, 4, 0.646);
 }
 .section1-content {
-    padding-top: 270px;
-    display: flex;
+    padding-top: 150px;
+    display: flex;  
     margin: auto;
     justify-content: space-around;
     width: 60%;
    
     }
 
-.header-section1{
+.section1{
     width:100%;
-    height:900px;        
+    height:100vh;        
     background-image: url(https://static.danhgiaxe.com/data/201525/8-peugeot-rcz-while-most-americans-may-be-unfamiliar-with-this-french-sports-coupe-the-rcz-has-been-racking-up-the-awards-since-its-debut-in-2009-including-top-gears-2010-coupe-of-the-year_2440.jpg);
-    background-size: 100% 739px;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
 }
 
 /* ----------------------------*/
 
 /* CSS session 2 */
-.title {
-    background-color: gray;
-    text-align: center;
-    height:60px;
-
-}
-.titleh2{
-    padding-top:10px;
-}
-.productcar {
-    background-color: black;
-    height: 600px;
-    display: inline-block;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 20px;
-}
-.productcar .product {
-    text-align: center;
-}
-.col-12{
-    background: white;
-}
-.col-3 {
-    height: 300px;
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-.item{
-    background: white;
-    border-radius: 10px 10px 10px 10px;
-}
-.btn {
-    color: white;
-    background-color:#866438;
-}
-.product {
-    padding-top: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-}
-.productcar {
+.latest-blog{
+    padding: 50px 0px;
     width: 100%;
-    height: 400px;
+    height: auto;
+    background: #5b5757;
+ 
+  }
+  .blog-box{
+    -webkit-box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+    box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+    background: #ffffff;
+    margin-bottom: 30px;
+  }
+  .blog-content{
+    position: relative;
+  }
+  .title-blog{
+    padding: 30px 15px 30px 45px;
+  }
+  .title-blog h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #010101;
+  }
+  .title-blog p{
+    margin: 0px;
+  }
+  .option-blog {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    top: 50%;
+    transform: translate(0%,-50%);
+  }
+  .option-blog li a{
+    background: #010101;
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    width: 34px;
+    height: 34px;
     text-align: center;
-    padding-left: 300px;
-}
-.card-img-top {
-    padding-top:10px;
-    width: 200px;
-    height: 150px;
-}
-
+    line-height: 34px;
+  }
+  .option-blog li a:hover{
+    background: #d33b33;
+    color: #ffffff;
+  }
+  .tooltip-inner {
+    background-color: #d33b33;
+  }
+  .tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: #d33b33 !important;
+    padding-top: 0px !important;
+    top: 0px !important;
+  }
+  .tooltip.bs-tooltip-left .arrow:before {
+    border-right-color: #d33b33 !important;
+  }
+  .tooltip.bs-tooltip-bottom .arrow:before {
+    border-right-color: #d33b33 !important;
+  }
+  .tooltip.bs-tooltip-top .arrow:before {
+    border-right-color: #d33b33 !important;
+  }
+  .title-all{
+    margin-bottom: 30px;
+  }
+  .title-all h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #010101;
+  }
+  .title-all p{
+    color: #999999;
+    font-size: 16px;
+  }
+  .products-box{
+    padding: 70px 0px;
+  }
+  .special-menu{
+    margin-bottom: 40px;
+  }
+  .filter-button-group{
+    display: inline-block;
+  }
+  .filter-button-group button{
+    background: #d33b33;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-size: 18px;
+  }
+  .filter-button-group button.active{
+    background: #010101;
+  }
+  
 /* SC6 */
 .sc6{
-	height: 610px;
+    padding: 50px 0px;
+    width: 100%;
+    height: 700px;
+    background: #5b5757;
 	background-color: #999;
 
 }
@@ -114,26 +160,26 @@
 
     justify-content: center
 }
-.sc6 .container .text-title2{
+.sc6 .container-sc6 .text-title2{
 	color: white;
     font-size: 18px;
     font-weight: 300px;
     line-height: 52px;
     text-align:center ;
-	margin-top: -40px;
+	
 }
-.sc6 .container .text-title1{
+.sc6 .container-sc6 .text-title1{
 	color: white;
 	font-family: "Oswald",sans-serif;
     font-size: 38px;
     letter-spacing: 1px;
-    padding-top:1rem;
+   
     font-weight: 400;
     line-height: 20px;
     text-align: center;
-	/* margin-top: 100px; */
+	
 }
-.sc6 .container .wrap .main-text{
+.sc6 .container-sc6 .wrap .main-text{
 	height: 250px;
 	width: 216px;
 	border-radius: 5%;
@@ -153,18 +199,18 @@
 	display: block;
 	}
 
-.sc6 .container .wrap .icon{
+.sc6 .container-sc6 .wrap .icon{
 	color: #d4651f;
 	text-align: center;
 	padding-top: 2rem;
 	font-size: 20px;
 
 }
-.sc6 .container .wrap{
+.sc6 .container-sc6 .wrap{
 	display: flex;
 	flex-direction: row;
 }
-.sc6 .container .review_details .main-text .name p{
+.sc6 .container-sc6 .review_details .main-text .name p{
 	text-align: center;
     font-weight: 200;
     font-size: 14px;
@@ -172,13 +218,13 @@
     color: #999;
 
 }
-.sc6 .container .avatar img{
+.sc6 .container-sc6 .avatar img{
 	align-items: center;
 	border-radius: 50%;
 }
 
 
-.sc6 .container .wrap p{
+.sc6 .container-sc6 .wrap p{
 	color: #fff;
 	font-family: "Oswald",sans-serif;
 	padding: 0.8rem;

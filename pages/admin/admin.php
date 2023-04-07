@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <!----======== CSS ======== -->
-     <link rel="stylesheet" href="./admin/style.css">
+     <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/admin.css">
      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
      <!----===== Iconscout CSS ===== -->
      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">

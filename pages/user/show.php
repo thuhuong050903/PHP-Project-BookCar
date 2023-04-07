@@ -8,18 +8,17 @@
 <script src="https://kit.fontawesome.com/11a9c95312.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="./styles/user.css">
+<link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/user.css">
+<link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/header.css">
+<link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/footer.css">
 <title>Home Page</title>
-
 </head>
 <body>
-    <!-- Code header và section 1 -->
-    <div class="header-section1">
         <!-- header -->
         <?php 
         include "./pages/components/header.php" ?>
         <!-- section1 -->
-        <section id="section1">
+        <section class="section1">
             <div class="section1-content">
                 <div class="section1-content-left">
                     <h1 style="margin-left: 30px;"> <i>WELLCOME TO SUPER</i></h1>
@@ -97,79 +96,86 @@
                         </table>
                     </form>
                 </div>
-    </div>
-        </section>
-    </div>
+            </div>
+    </section>
 <!-- code session 2 -->
-<?php
-    $car = array();
-    $car[0]["tensp"] = "Service";
-    $car[0]["mota"] = "Trying to catch up with very new social network? Do you find yourself juggling with copy and images to make sure to share at least.";
-    $car[0]["anhsp"] = "https://vidhantravels.com/img/cars/bmw.jpg";
-
-    $car[1]["tensp"] = "Best Coverage";
-    $car[1]["mota"] = "Trying to catch up with very new social network? Do you find yourself juggling with copy and images to make sure to share at least.";
-    $car[1]["anhsp"] = "https://i.pinimg.com/736x/37/67/52/376752e6c8548f30282a8d315faf1b3d--bmw-cars-cars-motorcycles.jpg";
-
-    $car[2]["tensp"] = "Lowest";
-    $car[2]["mota"] = "Trying to catch up with very new social network? Do you find yourself juggling with copy and images to make sure to share at least.";
-    $car[2]["anhsp"] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sij6hWXWmIylQqn3k0G7VApmxFHhz0JNLKizg2_2qzhr5KQjNgk-rp6uK6zzw3wcplU&usqp=CAU";
-    ?>
-    <div class="session2">
-        <div class="title"><b>
-                <h2 class="titleh2">OUR SERVICES</h2>
-            </b>
-        </div>
-        <div>
-            <div class="productcar">
-                <div class="product">
-                    <?php
-                    $n = count($car);
-                    for ($i = 0; $i < $n; $i++) {
-
-                    ?>
-                        <div class=" col-12 ">
-                            <div class="col-3" styte="width:200px">
-                                    <img class="card-img-top" src="<?php echo $car[$i]["anhsp"] ?>" alt="">
-                                    <br>
-                                    <div class="card-title product-title text-center h5" style="color:white"><?php echo $car[$i]["tensp"] ?></div>
-                                    <div class="price text-center h6" style="color:gray" ><?php echo $car[$i]["mota"] ?></div>
-                                    <br>
-                                    <a class="detail"  href="">
-                                        <button class="btn btn-success" style="margin-bottom:40px;">Read More -> </button>
-                                    </a>
-                                    <br>
-                                </div>
+<div class="latest-blog" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title-all text-center">
+                            <h1 style="color: white;">OUR SERVICES</h1>
+                            <p>WE PROVIDE THE BEST SERVICES TO SERVE CUSTOMERS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img class="img-fluid" src="https://vidhantravels.com/img/cars/bmw.jpg" alt=""style="width:360px;height:250px"/>
                             </div>
-
-                    <?php
-                    }
-
-                    ?>
+                            <div class="blog-content">
+                                <div class="title-blog">
+                                    <h3>BOOK A CAR</h3>
+                                    <p>We provide an online car booking service to our customers, making it easy for them to book a car quickly and conveniently. Customers can book a car in advance and choose the type of car that suits their needs.</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img class="img-fluid" src="https://i.pinimg.com/736x/37/67/52/376752e6c8548f30282a8d315faf1b3d--bmw-cars-cars-motorcycles.jpg" alt="" style="width:360px;height:250px"/>
+                            </div>
+                            <div class="blog-content">
+                                <div class="title-blog">
+                                    <h3>CARPOOLING</h3>
+                                    <p>Our carpooling service allows customers to share rides with others in the same destination. It is an economical and time-saving solution for those who do not want to pay too much for transportation and comfort during the trip.</p>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-4">
+                        <div class="blog-box">
+                            <div class="blog-img">
+                                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sij6hWXWmIylQqn3k0G7VApmxFHhz0JNLKizg2_2qzhr5KQjNgk-rp6uK6zzw3wcplU&usqp=CAU" alt=""style="width:360px;height:250px"/>
+                            </div>
+                            <div class="blog-content">
+                                <div class="title-blog">
+                                    <h3>QUICK SHIPPING</h3>
+                                    <p>We provide fast shipping service for customers who need to transport goods in the shortest time. We can deliver the goods to the location requested by the customer within a few hours or the same day.</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    
 
 <!-- Phan feedback tu khach hang -->
    
 <section class="sc6">	
-    <div class="container">
+    <div class="container-sc6">
         <div class="text-title1">
-            <h3>KHÁCH HÀNG NÓI GÌ</h3>
+            <h3>TESTIMONIAL</h3>
         </div>
         <div class="text-title2">
-            <p>Chúng tôi tự hào về chất lượng và dịch vụ của mình</p> 
+            <p>We take pride in our quality and service</p> 
         </div>
 
         <div class="wrap">
-            <div class="main-text">
+            <div class="main-text" style="height: 300px;">
                 <div class="text-box">
                     <div class="icon">
                         <i class="fa-solid fa-quote-left"></i>
                     </div>
                     <div class="text"> 
-                        <p>Có lần mình chuyển khoản nhầm mua thừa 1 vé, sau đó liên hệ lại với chăm sóc khách hàng thì được hỗ trợ kiểm tra và chuyển khoản lại ngay, không bị thủ tục rườm rà như bên khác. 
+                        <p>There was a time when I mistakenly transferred an excess to buy 1 ticket, then contacted customer care, and I was supported to check and transfer immediately, without cumbersome procedures like other parties.
                         </p>
                     </div>
                 </div>
@@ -178,26 +184,7 @@
                     <img src="./images/a1.jpg" alt="" style="width:50px;height:50px;">
                 </div>
                 <div class="name">
-                    <p>Bùi Xuân Hoàn</p>
-                </div>
-
-            </div>
-            <div class="main-text">
-                <div class="text-box">
-                    <div class="icon">
-                        <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <div class="text"> 
-                        <p>Mình rất hài lòng về dịch vụ của xe Điện Biên. nhân viên lịch sự chu đáo, lái xe cẩn thận không phóng nhanh vượt ẩu, dừng nghỉ đúng chỗ. Tôi cảm thấy hài lòng về dịch vụ xe.
-                        </p>
-                    </div>
-                </div>
-                <div class="triangle" ></div>
-                <div class="avatar">
-                    <img src="./images/a2.png" alt="" style="width:50px;height:50px;">
-                </div>
-                <div class="name">
-                    <p>Nguyễn Hữu Thắng</p>
+                    <p>Mr Hoàn</p>
                 </div>
 
             </div>
@@ -206,8 +193,27 @@
                     <div class="icon">
                         <i class="fa-solid fa-quote-left"></i>
                     </div>
+                    <div class="text"> 
+                        <p>I am very satisfied with the service of Da Nang car. polite and attentive staff, drive carefully not to overtake carelessly, stop at the right place. I feel satisfied with the car service.
+                        </p>
+                    </div>
+                </div>
+                <div class="triangle" ></div>
+                <div class="avatar">
+                    <img src="./images/a2.png" alt="" style="width:50px;height:50px;">
+                </div>
+                <div class="name">
+                    <p>Mr Thắng</p>
+                </div>
+
+            </div>
+            <div class="main-text" style="height: 250px;">
+                <div class="text-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
                     <div class="text" > 
-                        <p>Hôm qua, mình khá thích thú và hài lòng khi sử dụng dịch vụ xe khoang giường Hà Nội - Sơn La, lái xe nhiệt tình, bạn tiếp viên hỗ trợ mình xách hành lí.
+                        <p>Yesterday, I was quite excited and satisfied when using the Đà Nẵng - Quảng Trị bus service, the driver was enthusiastic, the flight attendant helped me carry my luggage.
                         </p>
                     </div>
                         
@@ -217,25 +223,7 @@
                     <img src="./images/a3.jpg" alt="" style="width:50px;height:50px;">
                 </div>
                 <div class="name">
-                    <p>Nguyễn Văn Biên</p>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="text-box">
-                    <div class="icon">
-                        <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <div class="text"> 
-                        <p>Xe chạy êm, không phóng nhanh vượt ẩu. Tài xế rất lịch sử, tổng đài trả lời dễ thương. Nhà xe nên mở thêm nhiều tuyến mới để khách hàng có thêm sự lựa chọn.
-                        </p>
-                    </div>
-                </div>
-                <div class="triangle" ></div>
-                <div class="avatar">
-                    <img src="./images/a4.jpg" alt="" style="width:50px;height:50px;">
-                </div>
-                <div class="name">
-                    <p>Phan Đức Thơ</p>
+                    <p>Mr Biên</p>
                 </div>
             </div>
             <div class="main-text" style="height: 275px;">
@@ -244,7 +232,25 @@
                         <i class="fa-solid fa-quote-left"></i>
                     </div>
                     <div class="text"> 
-                        <p>Đang lễ tết nên cực kì bất ngờ khi nhà xe không nhét khách, chỉ đủ số ghế là đã đi rồi. Phục vụ thì cực kì nhiệt tình, con mình rơi gấu bông ra khỏi túi mà gọi cho anh phụ xe tìm hộ gửi lại văn phòng cho mình.
+                        <p>The car runs smoothly, does not overtake carelessly. The driver is very historical, the operator is cute. The garage should open more new routes for customers to have more choices.
+                        </p>
+                    </div>
+                </div>
+                <div class="triangle" ></div>
+                <div class="avatar">
+                    <img src="./images/a4.jpg" alt="" style="width:50px;height:50px;">
+                </div>
+                <div class="name">
+                    <p>Mr Thơ</p>
+                </div>
+            </div>
+            <div class="main-text" style="height: 300px;">
+                <div class="text-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="text"> 
+                        <p>It was a holiday, so it was very surprising when the garage was not packed with guests, only enough seats were already gone. Service is extremely enthusiastic, my child dropped a teddy bear from his pocket 
                         </p>
                     </div>
                 </div>
@@ -253,8 +259,8 @@
                     <img src="./images/a5.jpg" alt="" style="width:50px;height:50px;">
                 </div>
                 <div class="name">
-                    <p>Phan Thanh Lực</p>
-                </div>
+                    <p>Mr Lực</p>
+                </div>  
             </div>
         </div>
     </div>
