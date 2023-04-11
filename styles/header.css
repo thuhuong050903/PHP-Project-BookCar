@@ -4,6 +4,11 @@
 }
 .menu .listimenu{
   position: absolute;
+ 
+}
+.listimenu li a{
+  text-decoration: none;
+  color: black;
 }
 .logo{
   margin-left: 70px;

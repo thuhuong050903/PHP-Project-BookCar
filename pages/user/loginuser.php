@@ -27,7 +27,7 @@
                 </div>
                 <form id="login" method="post" action="../../assets/dangnhapuser.php" class="input-group">
                     <input type="text" class="input-field" name="username" id="user"
-                        placeholder="User ID" style="color:white"required>
+                        placeholder="User Name" style="color:white"required>
                     <input type="password" name="password" class="input-field"
                         id="password"
                         placeholder="Enter Password" style="color:white" required>
@@ -39,17 +39,19 @@
                        </button>
 
                 </form>
-                <form id="register" action="" class="input-group">
-                    <input type="text" class="input-field" id="userres"
-                        placeholder="User ID" required>
-                    <input type="email" class="input-field" id="email"
-                        placeholder="Email ID" required>
+                <form id="register" method="post" action="../../assets/dangkiuser.php" class="input-group">
+                    <input type="text" class="input-field" name="username" id="userres"
+                        placeholder="User Name" required>
                     <input type="password" class="input-field" id="passwordres"
+                        placeholder="Password" required>
+                    <input type="password" class="input-field" name="password" id="passwordres"
                         placeholder="Enter Password" required>
+                    <input type="hidden" class="input-field" id="role"
+                        name="role" value="user" required>
                         <span id="boot-icon" class="bi bi-eye" style="font-size:10rem"></span>
                     <input type="checkbox" class="check-box"><span>I agree to
                         the terms & conditions</span>
-                    <button type="button" class="submit-btn"
+                    <button type="submit" class="submit-btn"
                         onclick="regiter()">Register</button>
                 </form>
 

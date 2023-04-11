@@ -29,17 +29,17 @@
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dahsboard</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="../admin/customer.php">
                     <i class="uil uil-user"></i>
-                    <span class="link-name">User</span>
+                    <span class="link-name">Customers</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="../admin/orders.php">
                     <i class="uil uil-shopping-cart-alt"></i>
-                    <span class="link-name">Order</span>
+                    <span class="link-name">Orders</span>
                 </a></li>
-                <li><a href="#"   >
+                <li><a href="../admin/trips.php">
                     <i class="uil uil-bed-double"></i>
-                    <span class="link-name">Car</span>                 
+                    <span class="link-name">Trips</span>                 
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-setting"></i>
@@ -72,7 +72,7 @@
                 <div class="boxes">
                     <div class="box box1">
                         <i class="uil uil-user"></i>
-                        <span class="text">Users</span>
+                        <span class="text">Customer</span>
                         <span id="user"></span>
                     </div>
                     <div class="box box2">

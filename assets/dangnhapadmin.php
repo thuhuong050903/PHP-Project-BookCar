@@ -11,7 +11,7 @@ if (!$conn) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM accounts WHERE username = '$username' AND password = '$password'";
+$sql = "SELECT * FROM accounts WHERE username = '$username' AND password = '$password'AND role ='admin'";
 $result = mysqli_query($conn, $sql);
 
 // Kiểm tra kết quả trả về

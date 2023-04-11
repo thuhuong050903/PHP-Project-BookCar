@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="images/fevicon.png" type="image/gif"/>
 <script src="https://kit.fontawesome.com/11a9c95312.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -12,7 +13,7 @@
 <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/header.css">
 <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/footer.css">
 <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/icon.css">
-<link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/blog.css">
+<!-- <link rel="stylesheet" href="../../../PHP-Project-BookCar/styles/blog.css"> -->
 
 <title>Home Page</title>
 
@@ -30,32 +31,13 @@
             <a href="https://www.facebook.com/myfanpage/" class="facebook-icon" target="_blank"><i class="fa fa-facebook"></i></a>
         </div>
 
-                <!-- header -->
-                <?php 
-                include './pages/components/header.php' ?>
-                <!-- section1 -->
-        <!-- <div class="slideshow-container" style="z-index: 1;">
-            <div class="mySlides">
-              <img src="./images/a1.jpg" style="width:100%;height:105vh; object-fit:cover;object-position: center;">          
-            </div>
-            
-            <div class="mySlides">
-
-              <img src="./images/a2.png" style="width:100%;height:105vh; object-fit: cover;object-position: center;">
               
-            </div>
-          
-            <div class="mySlides">
-              <img src="./images/a3.jpg" style="width:100%;height:105vh; object-fit: cover;object-position: center;">
-            </div>
-            </div>
-            <br>      
-            <div style="text-align:center; ">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div> -->
-        <section class="section1">
+            <section class="section1">
+            <?php 
+                // phpinfo();
+                // echo phpinfo();
+                include 'pages/components/header.php' ;
+            ?>
             <div class="section1-content">
                 <div class="section1-content-left">
                     <h1 style="margin-left: 30px;"> <i>WELLCOME TO SUPER</i></h1>
@@ -66,21 +48,21 @@
                 <!-- form section 1 -->
               
                 <div class="section1-content-right">
-                    <form class="section1-form">
+                    <form class="section1-form" method="post" action="../../../PHP-Project-BookCar/pages/user/xulyshow.php">
                         <table>
                             <tr>
                                 <td>
                                     <span class="form-title">PICK UP LOCATION</span>
                                 </td>
                                 <td>
-                                    <input list="form-pickUp-locations" name="form-pickUp-location" id="form-pickUp-location">
+                                    <input list="form-pickUp-locations" name="point_of_departure" id="form-pickUp-location">
                                     <datalist id="form-pickUp-locations">
-                                        <option value="Đà Nẵng">Đà Nẵng</option>
-                                        <option value="Hà Nội">Hà Nội</option>
-                                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                        <option value="Quảng Trị">Quảng Trị</option>
+                                        <option value="Quảng Nam">Quảng Nam</option>
                                         <option value="Huế">Huế</option>
-                                        <option value="Nha Trang">Nha Trang</option>
-                                        <option value="Hải Dương">Hải Dương</option>
+                                        <option value="Bình Định">Bình Định</option>
+                                        <option value="Quảng Ngãi">Quảng Ngãi</option>
                                         <option value="Quảng Bình">Quảng Bình</option>
                                     </datalist>
                                     <span class="form-icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
@@ -95,17 +77,14 @@
                                     <span class="form-title">DROP LOCATION</span>
                                 </td>
                                 <td>
-                                    <input list="form-drop-locations" name="form-drop-location" id="form-drop-location">
+                                    <input list="form-drop-locations" name="destination" id="form-drop-location">
                                     <datalist id="form-drop-locations">
                                         <option value="Đà Nẵng">Đà Nẵng</option>
-                                        <option value="Hà Nội">Hà Nội</option>
-                                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                        <option value="Quảng Trị">Quảng Trị</option>
+                                        <option value="Quảng Nam">Quảng Nam</option>
                                         <option value="Huế">Huế</option>
-                                        <option value="Nha Trang">Nha Trang</option>
-                                        <option value="Hải Dương">Hải Dương</option>
-                                        <option value="Quảng Bình">Quảng Bình</option>
-
-                                        <option value="Hải Dương">Hải Dương</option>
+                                        <option value="Bình Định">Bình Định</option>
+                                        <option value="Quảng Ngãi">Quảng Ngãi</option>
                                         <option value="Quảng Bình">Quảng Bình</option>
                                     </datalist>
                                     <span class="form-icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
@@ -119,7 +98,7 @@
                                     <span class="form-title">DATE TIME</span>
                                 </td>
                                 <td>
-                                    <input type="datetime-local" class="form-date-time">
+                                    <input type="datetime-local" class="form-date-time" name="time">
                                 </td>
                             </tr>
                             <tr>
@@ -136,8 +115,9 @@
                 </div>
             </div>
     </section>
+    
 <!-- code session 2 -->
-<div class="latest-blog" style="position: relative;" >
+<div class="latest-blog"  >
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -151,7 +131,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="blog-box">
                             <div class="blog-img">
-                                <img class="img-fluid" src="https://vidhantravels.com/img/cars/bmw.jpg" alt=""style="width:360px;height:250px"/>
+                                <img class="img-fluid" src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""style="width:360px;height:250px"/>
                             </div>
                             <div class="blog-content">
                                 <div class="title-blog">
@@ -165,7 +145,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="blog-box">
                             <div class="blog-img">
-                                <img class="img-fluid" src="https://i.pinimg.com/736x/37/67/52/376752e6c8548f30282a8d315faf1b3d--bmw-cars-cars-motorcycles.jpg" alt="" style="width:360px;height:250px"/>
+                                <img class="img-fluid" src="https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" style="width:360px;height:250px"/>
                             </div>
                             <div class="blog-content">
                                 <div class="title-blog">
@@ -179,7 +159,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-4">
                         <div class="blog-box">
                             <div class="blog-img">
-                                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sij6hWXWmIylQqn3k0G7VApmxFHhz0JNLKizg2_2qzhr5KQjNgk-rp6uK6zzw3wcplU&usqp=CAU" alt=""style="width:360px;height:250px"/>
+                                <img class="img-fluid" src="https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""style="width:360px;height:250px"/>
                             </div>
                             <div class="blog-content">
                                 <div class="title-blog">
@@ -218,7 +198,7 @@
                 </div>
                 <div class="triangle" ></div>
                 <div class="avatar">
-                    <img src="./images/a1.jpg" alt="" style="width:50px;height:50px;">
+                    <img src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="width:50px;height:50px;object-fit: cover;object-position: center;">
                 </div>
                 <div class="name">
                     <p>Mr Hoàn</p>
@@ -237,10 +217,10 @@
                 </div>
                 <div class="triangle" ></div>
                 <div class="avatar">
-                    <img src="./images/a2.png" alt="" style="width:50px;height:50px;">
+                    <img src="https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="width:50px;height:50px;object-fit: cover;object-position: center;">
                 </div>
                 <div class="name">
-                    <p>Mr Thắng</p>
+                    <p>Ms Trang</p>
                 </div>
 
             </div>
@@ -257,7 +237,7 @@
                 </div>
                 <div class="triangle" ></div>
                 <div class="avatar">
-                    <img src="./images/a3.jpg" alt="" style="width:50px;height:50px;">
+                    <img src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="width:50px;height:50px;object-fit: cover;object-position: center;">
                 </div>
                 <div class="name">
                     <p>Mr Biên</p>
@@ -275,10 +255,10 @@
                 </div>
                 <div class="triangle" ></div>
                 <div class="avatar">
-                    <img src="./images/a4.jpg" alt="" style="width:50px;height:50px;">
+                    <img src="https://images.pexels.com/photos/371160/pexels-photo-371160.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="width:50px;height:50px;object-fit: cover;object-position: center;">
                 </div>
                 <div class="name">
-                    <p>Mr Thơ</p>
+                    <p>Ms Huyền</p>
                 </div>
             </div>
             <div class="main-text" style="height: 300px;">
@@ -293,7 +273,7 @@
                 </div>
                 <div class="triangle" ></div>
                 <div class="avatar">
-                    <img src="./images/a5.jpg" alt="" style="width:50px;height:50px;">
+                    <img src="https://images.pexels.com/photos/2072453/pexels-photo-2072453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" style="width:50px;height:50px;object-fit: cover;object-position: center;">
                 </div>
                 <div class="name">
                     <p>Mr Lực</p>
@@ -303,32 +283,58 @@
     </div>
 </section>
 <!-- blog -->
-
- 
+<div class="about_section layout_padding">
+         <div class="container">
+            <div class="text-title2">
+                <h3>BLOG</h3>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+               <div class="col-lg-7 col-sm-12">
+                  <div class="about_img"><video  src="https://player.vimeo.com/external/363170147.sd.mp4?s=61b558d1819ee9502feb57fdac48fd9ea7ff190c&profile_id=164&oauth2_token_id=57447761" controls></video></div>
+                  <div class="like_icon"><h5>Nguyễn Văn Biên</h5></div>
+                  <p class="post_text">Post By : 01/04/2023 </p>  
+                  <h2 class="most_text">Travel Across Viet Nam With SUPER </h2>
+                 
+                  <p class="lorem_text">Last Saturday I had a trip from Ho Chi Minh City to Hanoi capital. This is the best trip of my life. I have a beautiful view and the garage is also very attentive</p>
+                  <div class="social_icon_main">
+                     <div class="read_bt"> <button style="background-color:black"> <a href="#" style="text-decoration: none; color:white">Read More</a></button> <br><br><br><br>
+                       </div>
+                  </div>
+               </div>
+               <div class="col-lg-5 col-sm-12">
+                  <div class="newsletter_main">
+                     <h1 class="recent_taital" style="margin-left:150px; color:aliceblue">Recent post</h1>
+                     <div class="recent_box">
+                        <div class="recent_left">
+                           <div class="image_6"><img src="https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?auto=compress&cs=tinysrgb&w=600" style="width:150px;height:130px"/></div>
+                        </div>
+                        <div class="recent_right">
+                           <h5 class="consectetur_text">Special bus from Da Nang to Quang Tri</h5>
+                           <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing </p>
+                           <div class="read_bt"> <button style="background-color:black;"> <a href="#" style="text-decoration: none; color:white ; ">Read More</a></button> 
+                       </div>
+                        </div>
+                     </div>
+                     <div class="recent_box">
+                        <div class="recent_left">
+                           <div class="image_6"><img src="https://images.pexels.com/photos/11191307/pexels-photo-11191307.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" style="width:150px;height:130px"/></div>
+                        </div>
+                        <div class="recent_right">
+                           <h5 class="consectetur_text">Special bus from Da Nang to Quang Tri</h5>
+                           <p class="dolor_text">It was a holiday, so it was very surprising when the garage </p>
+                           <div class="read_bt"> <button style="background-color:black;"> <a href="#" style="text-decoration: none; color:white ; ">Read More</a></button> 
+                        </div>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 <?php 
-        include "./pages/components/footer.php" ?>
+        include "pages/components/footer.php" ?>
     <!-- ------------------------------------------ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
-<!-- <script>
-        let slideIndex = 0;
-        showSlides();
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 1500); 
-        }
-        </script> -->
 </html>

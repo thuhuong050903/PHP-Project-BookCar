@@ -4,12 +4,12 @@
             </div>
             <div class="menu">
                 <ul class="listmenu" >
-                    <li><a href="#">HOME PAGE</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">OUR FLEETS</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#" style="text-decoration: none;color:black">HOME PAGE</a></li>
+                    <li><a href="#" style="text-decoration: none;color:black">ABOUT US</a></li>
+                    <li><a href="#" style="text-decoration: none;color:black">SERVICES</a></li>
+                    <li><a href="#" style="text-decoration: none;color:black">OUR FLEETS</a></li>
+                    <li><a href="#" style="text-decoration: none;color:black">BLOG</a></li>
+                    <li><a href="#" style="text-decoration: none;color:black">CONTACT US</a></li>
                 </ul>
             </div>
             <div class="button">

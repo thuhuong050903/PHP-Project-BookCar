@@ -1,3 +1,3 @@
 <?php
-    $conn = mysqli_connect("localhost","root","","product")
+    $conn = mysqli_connect("localhost","root","","booking_car")
 ?>

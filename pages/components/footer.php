@@ -56,12 +56,12 @@
                                     <h3>Useful Links</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">HOME PAGE</a></li>
-                                    <li><a href="#">ABOUT US</a></li>
-                                    <li><a href="#">SERVICES</a></li>
-                                    <li><a href="#">OUR FLEETS</a></li>
-                                    <li><a href="#">BLOG</a></li>
-                                    <li><a href="#">CONTACT US</a></li>
+                                    <li><a href="#"style="text-decoration: none;">HOME PAGE</a></li>
+                                    <li><a href="#"style="text-decoration: none;">ABOUT US</a></li>
+                                    <li><a href="#"style="text-decoration: none;">SERVICES</a></li>
+                                    <li><a href="#"style="text-decoration: none;">OUR FLEETS</a></li>
+                                    <li><a href="#"style="text-decoration: none;">BLOG</a></li>
+                                    <li><a href="#"style="text-decoration: none;">CONTACT US</a></li>
                                 </ul>
                             </div>
                         </div>

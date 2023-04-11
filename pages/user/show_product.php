@@ -67,13 +67,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
         }
 
         .detail_order button {
             width: 100px;
             height: 50px;
-            
+
 
         }
 
@@ -103,10 +103,12 @@
         .card-img-top {
             border-radius: 15px 15px 0px 0px;
         }
-        .btn-success{
+
+        .btn-success {
             background-color: green;
         }
-        .add-to-cart{
+
+        .add-to-cart {
             background-color: green;
         }
     </style>
@@ -117,15 +119,25 @@
         <div class="selection">
             <h2><b>Chọn loại xe<b></h2>
             <?php
-            include "connect.php";
-            $sl = "SELECT*FROM dstype";
+            $dbhost = 'localhost';
+            $dbuser = 'root';
+            $dbpass = '';
+            $dbname = 'booking_car';
+            $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+            $sl = "SELECT * FROM vehicles";
             $kq = mysqli_query($conn, $sl);
+            $Huu = array();
             while ($d = mysqli_fetch_array($kq)) {
+                if (!in_array($d['vehicle_type'], $Huu)) {
+                    array_push($Huu, $d['vehicle_type']);
             ?>
-                <button style="width: 200px">
-                    <a href="type_car.php? type=<?php echo  $d['idtype']  ?> "><?php echo  $d['type_name'] ?></a>
-                </button>
-            <?php } ?>
+                    <button style="width: 200px">
+                        <a href="show_product.php?vehicletype=<?php echo $d['id_vehicle']; ?>"><?php echo $d['vehicle_type']; ?></a>
+                    </button>
+            <?php
+                }
+            }
+            ?>
         </div>
         <div class="list_product">
             <center>
@@ -133,17 +145,24 @@
             </center>
             <div class="product">
                 <?php
-                if (isset($_GET['type'])) {
-                    $idtype = $_GET['type'];
-                    $sl = "SELECT name , image , price from dscar WHERE idtype =$idtype";
-                    $kq = mysqLi_query($conn, $sl);
-                    while ($d = mysqli_fetch_array($kq)) {
+                $dbhost = 'localhost';
+                $dbuser = 'root';
+                $dbpass = '';
+                $dbname = 'booking_car';
+                $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+                if (isset($_GET['vehicletype'])) {
+                    $vehicle_type = $_GET['vehicletype'];
+                    $sls = "SELECT * FROM vehicles WHERE vehicle_type ='$vehicle_type'";
+                    if($kqs = mysqLi_query($conn, $sls)){
+                    while ($r = mysqli_fetch_array($kqs)) {
+                        
+
                 ?>
                         <div class=" col-12 ">
                             <div class="card product p-2" styte="width:auto">
-                                <img class="card-img-top" src="<?php echo $d["image"] ?>" height="350px" width="100%" alt="">
-                                <div class="card-title product-title text-center h5"><?php echo $d["name"] ?></div>
-                                <div class="price text-center h6"><?php echo $d["price"] ?></div>
+                                <img class="card-img-top" src="<?php echo $r["image"] ?>" height="350px" width="100%" alt="">
+                                <div class="card-title product-title text-center h5"><?php echo $r["name_vehicles"] ?></div>
+                                <div class="price text-center h6"><?php echo $r["capacity"] ?></div>
                                 <div class="detail_order">
                                     <a class="detail" href="detail.php? detail=<?php echo $i; ?>" style="width:200px; height:60px; ">
                                         <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal"><b>Xem chi tiết</b></button>
@@ -159,6 +178,7 @@
 
 
                 <?php
+                    }
                     }
                 }
                 ?>
